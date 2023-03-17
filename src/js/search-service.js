@@ -29,14 +29,14 @@ export default class SearchApiService {
     }
   
     resetPage() {
-      this.page = 1;
+        this.page = 1;
+      }
+    
+      get query() {
+        return this.searchQuery;
+      }
+    
+      set query(newQuery) {
+        this.searchQuery = newQuery;
+      }
     }
-  
-    get query() {
-      return this.searchQuery;
-    }
-  
-    set query(newQuery) {
-      this.searchQuery = newQuery;
-    }
-  }
