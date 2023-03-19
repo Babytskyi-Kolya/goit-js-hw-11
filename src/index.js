@@ -62,6 +62,7 @@ async function onSearch(e) {
       simpleLightbox.refresh();
       if (Math.ceil(totalHits / 40) === picturesApiService.page) {
         console.log(totalHits);
+        buttonHidden();
         setTimeout(() => {
           Notiflix.Notify.info(
             "We're sorry, but you've reached the end of search results."
